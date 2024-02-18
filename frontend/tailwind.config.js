@@ -7,6 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'dark-moss': '#17290B',
+        'soft-beige': '#F3EFE0',
+        'vibrant-teal': '#33A6B8',
+        'muted-coral': '#D17A54',
+        'pale-mint': '#98D7C2',
+        'lighter-dark-moss': '#38651b',
+        'darker-muted-coral': '#6e361d'
+      },
+      fontFamily: {
+        sans: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

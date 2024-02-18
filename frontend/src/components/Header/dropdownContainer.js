@@ -1,12 +1,12 @@
 import React from 'react';
 
 // Define a Header component using an arrow function
-const SideBarContainer = ({ children }) => {
+const DropdownContainer = ({ children }) => {
     return (
-        <div className="flex flex-col mt-1">
+        <div className="flex flex-col">
             {children}
         </div>
     );
 };
 
-export default SideBarContainer; 
+export default DropdownContainer; 

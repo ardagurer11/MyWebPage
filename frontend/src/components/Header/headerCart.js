@@ -1,13 +1,13 @@
 import React from 'react';
 
-const HeaderCart = ({ cartName }) => {
+const HeaderCart = ({ cartName, refName }) => {
     return (
-        <button className='py-2 px-3 my-2 mx-1 hover:bg-zinc-700 rounded-full transition-all duration-200 ease-in-out'>
-            <div className='text-white font-medium'>
+        <a className='py-2 px-3 my-2 mx-1 hover:bg-lighter-dark-moss rounded-full transition-all duration-200 ease-in-out' href={`${refName}`}>
+            <div className='text-soft-beige font-bold'>
                 {cartName}
             </div>
 
-        </button>
+        </a>
     );
 }
 
