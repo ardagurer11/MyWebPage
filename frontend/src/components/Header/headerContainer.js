@@ -3,7 +3,7 @@ import React from 'react';
 // Define a Header component using an arrow function
 const HeaderContainer = ({ children }) => {
     return (
-        <div className="bg-zinc-400 w-full fixed">
+        <div className="flex flex-row">
             {children}
         </div>
     );
