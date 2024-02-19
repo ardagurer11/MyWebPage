@@ -7,7 +7,7 @@ const QuoteBox = ({ name, quote }) => {
             <div className="text-lg font-bold mb-3">
               {name}
             </div>
-            <div className="italic">
+            <div className="italic text-lighter-dark-moss">
               {quote}
             </div>
           </div>

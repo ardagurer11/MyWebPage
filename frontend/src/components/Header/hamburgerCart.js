@@ -6,7 +6,7 @@ const HamburgerCart = ({ ToggleSideBar, isOpen }) => {
 
     return (
         <button
-            className="flex flex-col h-10 w-16 justify-center items-center group hover:bg-lighter-dark-moss rounded-full"
+            className="flex flex-col h-10 w-16 justify-center items-center group hover:bg-lighter-dark-moss rounded-full transition ease transform duration-500"
             onMouseEnter={() => ToggleSideBar(true)}
             onMouseLeave={() => ToggleSideBar(false)}
         >

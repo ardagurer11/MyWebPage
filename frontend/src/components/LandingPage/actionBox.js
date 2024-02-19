@@ -3,13 +3,13 @@ import Image from 'next/image';
 
 const ActionBox = ({ name, description, action, refName }) => {
     return (
-        <div className=" py-4 px-4 rounded-[28px] bg-lighter-dark-moss shadow-lg hover:scale-105 transition ease-in-out duration-300 my-3">
+        <div className=" py-4 px-4 rounded-[28px] bg-darker-soft-beige shadow-lg hover:scale-105 transition ease-in-out duration-300 my-3">
             <div className='flex flex-row'>
                 <div className='w-[150px] h-[150px] bg-soft-beige mr-4 rounded-[18px]'>
                     <Image
                         src={'./retro-2.png'}
-                        width={180}
-                        height={180}
+                        width={150}
+                        height={150}
                         alt="retro"
                         style={{ objectFit: 'cover' }} 
                         
@@ -19,10 +19,10 @@ const ActionBox = ({ name, description, action, refName }) => {
                     <div className="text-xl font-bold mb-3 text-soft-beige">
                         {name}
                     </div>
-                    <div className="line-clamp-3 text-sm text-soft-beige mb-3 ">
+                    <div className="line-clamp-3 text-sm text-soft-beige mb-[1rem] ">
                         {description}
                     </div>
-                    <a className="text-pale-mint py-1 after:content-['_↗'] font-medium hover:opacity-50" href={refName}>
+                    <a className="text-vibrant-teal py-1 font-medium hover:opacity-50 px-4 py-1 rounded-full bg-soft-beige" href={refName}>
                         {action}
                     </a>
                 </div>

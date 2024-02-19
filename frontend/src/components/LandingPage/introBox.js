@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 const IntroBox = ({ introSequence, descriptionParts }) => {
 
     return (
-        <div className='flex justify-center items-center mx-[4rem]'>
+        <div className='flex justify-center items-center mx-[4rem] my-[4rem]'>
             <div className="flex flex-col items-start justify-center">
                 <div className="text-4xl font-[Courier] ">
                     <TypeAnimation
@@ -23,7 +23,7 @@ const IntroBox = ({ introSequence, descriptionParts }) => {
                             <span key={index}>{part}</span>
                     )}
                 </div>
-                <a className='px-5 py-3 bg-muted-coral rounded-[28px] font-semibold text-white hover:scale-110 transition ease-in-out duration-300 shadow-lg' href='/Projects'>
+                <a className='px-5 py-3 bg-dark-moss hover:bg-lighter-dark-moss rounded-[28px] font-semibold text-soft-beige hover:scale-110 transition ease-in-out duration-300 shadow-lg' href='/Projects'>
                     {"Check Out Projects >"}
                 </a>
             </div>

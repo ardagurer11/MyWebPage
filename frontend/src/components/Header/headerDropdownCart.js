@@ -11,7 +11,7 @@ const HeaderDropdownCart = ({ children, cartName, refName }) => {
     };
 
     return (
-        <div className='flex py-2 px-3 my-2 mx-1 hover:bg-lighter-dark-moss rounded-full transition-all duration-[1000ms] ease-in-out justify-center cursor-pointer'
+        <div className='flex py-2 px-3 my-2 mx-1 hover:bg-lighter-dark-moss rounded-full transition-all duration-[500ms] ease-in-out justify-center cursor-pointer'
             onClick={navigateToRef}
             onMouseEnter={() => setIsOpen(true)} // Open dropdown on mouse enter
             onMouseLeave={() => setIsOpen(false)} // Close dropdown on mouse leave

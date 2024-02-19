@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-soft-beige">
       <Header />
-      <div className="m-20" />
+      <div className="m-[3rem]" />
       <TwoGrid>
         <IntroBox
           introSequence={[
@@ -39,7 +39,7 @@ export default function Home() {
           ]}
           descriptionParts={descriptionParts}
         />
-        <div className="flex flex-col items-center justify-center mx-[4rem]">
+        <div className="flex flex-col items-center justify-center mx-[4rem] my-[4rem]">
           <Image
             src={'./retro-1.png'}
             width={512}
@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </TwoGrid>
 
-      <div className="flex flex-col items-center justify-center my-12">
+      <div className="flex flex-col items-center justify-center">
         <Image
           src={'./separator-1.png'}
           width={650}
@@ -58,9 +58,9 @@ export default function Home() {
         />
       </div>
 
-      <div className="my-12"></div>
+      <div className="my-[3rem]"></div>
       <TwoGrid>
-        <div className="flex flex-col items-center justify-center mx-[4rem]">
+        <div className="flex flex-col items-center justify-center mx-[4rem] my-[4rem]">
           <Image
             src={'./retro-4.png'}
             width={500}
@@ -68,7 +68,7 @@ export default function Home() {
             alt="retro"
           />
         </div>
-        <div className="flex flex-col items-center justify-center mx-[4rem]">
+        <div className="flex flex-col items-center justify-center mx-[4rem] my-[4rem]">
           <div className="text-4xl mb-6 font-bold ">
             Latest Applications
           </div>
@@ -86,7 +86,7 @@ export default function Home() {
           />
         </div>
       </TwoGrid>
-      <div className="my-12"></div>
+      
       <div className="flex flex-col items-center justify-center my-12">
         <Image
           src={'./separator-2.png'}

@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         'dark-moss': '#17290B',
         'soft-beige': '#F3EFE0',
+        'darker-soft-beige': '#c3724a',
         'vibrant-teal': '#33A6B8',
         'muted-coral': '#D17A54',
         'pale-mint': '#98D7C2',
