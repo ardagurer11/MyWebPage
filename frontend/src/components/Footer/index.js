@@ -13,6 +13,7 @@ const Footer = () => {
                     <FooterSectionElement name={'Twitter'} />
                     <FooterSectionElement name={'Instagram'} />
                     <FooterSectionElement name={'Github'} />
+                    <FooterSectionElement name={'LinkedIn'} />
                 </FooterGridSection>
                 <FooterGridSection>
                     <FooterSectionHeader name={'Sitemap'} />
@@ -29,6 +30,7 @@ const Footer = () => {
                     <FooterSectionElement name={'GardGPT'} />
                     <FooterSectionElement name={'Gard-E'} />
                 </FooterGridSection>
+                <div className='mb-6'></div>
             </div>
         </div>
     );

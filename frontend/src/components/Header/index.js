@@ -19,7 +19,7 @@ const Header = () => {
 
     return (
         <div className='flex justify-center'>
-            <div className='flex flex-row bg-dark-moss fixed items-center justify-between w-[calc(100%-2rem)] my-4 rounded-full shadow-lg'>
+            <div className='flex flex-row bg-dark-moss fixed items-center justify-between w-[calc(100%-2rem)] my-4 rounded-full shadow-lg '>
                 <div className='flex flex-row items-center'>
                     <div className=''>
                         <LogoCart />
