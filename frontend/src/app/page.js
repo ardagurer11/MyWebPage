@@ -3,6 +3,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ActionBox from "@/components/LandingPage/ActionBox";
+import Carousel from "@/components/LandingPage/carousel";
 import IntroBox from "@/components/LandingPage/introBox";
 import QuoteBox from "@/components/LandingPage/quoteBox";
 import ThreeGrid from "@/components/LandingPage/threeGrid";
@@ -12,6 +13,17 @@ import Image from "next/image";
 
 
 export default function Home() {
+
+  const descriptionParts = [
+    "I graduated from ",
+    { text: "Saint Joseph High School", link: "https://sj.k12.tr" },
+    " and later earned my Computer Science degree from ",
+    { text: "Purdue University", link: "https://www.purdue.edu" },
+    ". My work involves building mobile applications, websites, artificial intelligence models, and managing database systems. Currently, I'm a data scientist at ",
+    { text: "Ford Otosan", link: "https://www.fordotosan.com.tr" },
+    ", where I apply my skills to analyze and interpret complex data sets. Beyond my professional life, I have a strong passion for adventure and curiosity, constantly seeking new experiences and knowledge."
+  ];
+
   return (
     <main className="flex min-h-screen flex-col bg-soft-beige">
       <Header />
@@ -25,9 +37,9 @@ export default function Home() {
             'Hello, my name is Arda Gürer.',
             1000
           ]}
-          description={"In the heart of an ancient forest, where whispers of the past weave through the towering trees, a small, shimmering brook carves its way through the dense underbrush, its crystal-clear waters dancing under the dappled sunlight. Nearby, a curious fox, its coat a vibrant shade of russet, tiptoes through the undergrowth, its sharp eyes scanning the surroundings for any sign of movement. Above, a kaleidoscope of birds serenades the wilderness, their melodies intertwining to create a symphony of nature's tranquility."}
+          descriptionParts={descriptionParts}
         />
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center mx-[4rem]">
           <Image
             src={'./retro-1.png'}
             width={512}
@@ -45,10 +57,10 @@ export default function Home() {
           alt="retro"
         />
       </div>
-      
+
       <div className="my-12"></div>
       <TwoGrid>
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center mx-[4rem]">
           <Image
             src={'./retro-4.png'}
             width={500}
@@ -56,7 +68,7 @@ export default function Home() {
             alt="retro"
           />
         </div>
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center mx-[4rem]">
           <div className="text-4xl mb-6 font-bold ">
             Latest Applications
           </div>
@@ -83,7 +95,7 @@ export default function Home() {
           alt="retro"
         />
       </div>
-      
+
       <div className="my-6"></div>
       <ThreeGrid>
         <QuoteBox name={'Richard Feynman'} quote={'"What I cannot create, I do not understand."'} />
