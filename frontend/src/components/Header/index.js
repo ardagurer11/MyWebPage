@@ -19,12 +19,12 @@ const Header = () => {
 
     return (
         <div className='flex justify-center'>
-            <div className='flex flex-row bg-dark-moss fixed items-center justify-between w-[calc(100%-2rem)] my-4 rounded-full shadow-lg '>
+            <div className='flex flex-row bg-dark-moss fixed items-center justify-between w-[calc(100%-2rem)] my-4 rounded-full shadow-lg z-50'>
                 <div className='flex flex-row items-center'>
                     <div className=''>
                         <LogoCart />
                     </div>
-                    <div className='border-[0.5px] border-soft-beige py-5 mr-4' />
+                    <div className='border-[0.5px] border-soft-beige py-5 mr-4 hidden md:flex' />
                     <HeaderContainer>
                         <HeaderCart cartName={'Home'} refName={'/'} />
                         <HeaderDropdownCart cartName={'Projects'} refName={'/Projects'}>
@@ -32,7 +32,7 @@ const Header = () => {
                             <DropdownCart cartName={'Gard-E'} refName={'/Projects/GardE'}/>
                         </HeaderDropdownCart>
                         <HeaderCart cartName={'About'} refName={'/About'} />
-                        <HeaderCart cartName={'AI Galery'} refName={'/AI_Galery'} />
+                        <HeaderCart cartName={'AI Gallery'} refName={'/AI_Gallery'} />
                     </HeaderContainer>
                 </div>
                 <div className='mr-2'>

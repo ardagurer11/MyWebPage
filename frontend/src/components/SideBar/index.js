@@ -7,7 +7,7 @@ import SubSideBarCart from './subSideBarCart';
 const SideBar = ({ isOpen, ToggleSideBar }) => {
     return (
         <div
-            className={`flex flex-col bg-dark-moss shadow-lg fixed right-0 my-[88px] h-[calc(100%-10rem)] mx-4 rounded-[28px] w-1/6 min-w-32 overflow-hidden transition-height duration-700 ease-in-out ${isOpen ? "max-h-screen" : "max-h-0"}`}
+            className={`flex flex-col bg-dark-moss shadow-lg fixed right-0 my-[88px] h-[calc(100%-10rem)] mx-4 rounded-[28px] w-1/6 min-w-32 overflow-hidden transition-height duration-700 ease-in-out z-50 ${isOpen ? "max-h-screen" : "max-h-0"}`}
             onMouseLeave={() => ToggleSideBar(false)}
             onMouseEnter={() => ToggleSideBar(true)}
         >
@@ -21,7 +21,7 @@ const SideBar = ({ isOpen, ToggleSideBar }) => {
                     <SubSideBarCart cartName={'Gard-E'} ToggleSideBar={ToggleSideBar} refName={'/Projects/GardE'} />
                 </div>
                 <SideBarCart cartName={'About'} ToggleSideBar={ToggleSideBar} refName={'/About'} />
-                <SideBarCart cartName={'AI Galery'} ToggleSideBar={ToggleSideBar} refName={'/AI_Galery'} />
+                <SideBarCart cartName={'AI Gallery'} ToggleSideBar={ToggleSideBar} refName={'/AI_Gallery'} />
             </SideBarContainer>
             <div className='mb-1' />
         </div>
