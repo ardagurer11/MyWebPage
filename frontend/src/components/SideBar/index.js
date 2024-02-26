@@ -21,6 +21,7 @@ const SideBar = ({ isOpen, ToggleSideBar }) => {
                     <SubSideBarCart cartName={'Gard-E'} ToggleSideBar={ToggleSideBar} refName={'/Projects/GardE'} />
                 </div>
                 <SideBarCart cartName={'About'} ToggleSideBar={ToggleSideBar} refName={'/About'} />
+                <SideBarCart cartName={'AI Galery'} ToggleSideBar={ToggleSideBar} refName={'/AI_Galery'} />
             </SideBarContainer>
             <div className='mb-1' />
         </div>

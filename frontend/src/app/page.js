@@ -2,9 +2,9 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import ActionBox from "@/components/LandingPage/ActionBox";
 import Carousel from "@/components/LandingPage/carousel";
 import IntroBox from "@/components/LandingPage/introBox";
+import ActionBox from "@/components/LandingPage/actionBox";
 import QuoteBox from "@/components/LandingPage/quoteBox";
 import ThreeGrid from "@/components/LandingPage/threeGrid";
 import TwoGrid from "@/components/LandingPage/twoGrid";

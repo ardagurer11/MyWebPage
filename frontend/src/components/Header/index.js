@@ -32,6 +32,7 @@ const Header = () => {
                             <DropdownCart cartName={'Gard-E'} refName={'/Projects/GardE'}/>
                         </HeaderDropdownCart>
                         <HeaderCart cartName={'About'} refName={'/About'} />
+                        <HeaderCart cartName={'AI Galery'} refName={'/AI_Galery'} />
                     </HeaderContainer>
                 </div>
                 <div className='mr-2'>
